@@ -23,7 +23,8 @@ app.get('/health',(req,res) => {
 
     const resp = {
         state: 'Up and Running',
-        processId : process.pid
+        processId : process.pid,
+        message: 'Say Hello to dynamic Message'
     }
     res.send(resp);
     return;
