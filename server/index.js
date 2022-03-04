@@ -20,12 +20,19 @@ origin: function(origin, callback){
 
 app.get('/health',(req,res) => {
     console.log('receiving get request');
-    const cmd = './docker.sh ';
 
     const resp = {
         state: 'Up and Running',
         processId : process.pid
     }
+    res.send(resp);
+    return;
+});
+
+app.get('/health/processID',(req,res) => {
+    console.log('receiving get request');
+
+    const resp = process.pid + "";
     res.send(resp);
     return;
 });
