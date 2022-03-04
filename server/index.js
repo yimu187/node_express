@@ -32,7 +32,7 @@ app.get('/health',(req,res) => {
 app.get('/health/processID',(req,res) => {
     console.log('receiving get request');
 
-    const resp = process.pid + "";
+    const resp = process.pid + " I love DDX";
     res.send(resp);
     return;
 });
