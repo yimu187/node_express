@@ -24,7 +24,7 @@ app.get('/health',(req,res) => {
     const resp = {
         state: 'Up and Running',
         processId : process.pid,
-        message: 'Say Hello to dynamic Message from vscode maik'
+        message: 'Say Hello to dynamic Message from vscode '
     }
     res.send(resp);
     return;
